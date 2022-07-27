@@ -1,0 +1,20 @@
+header{
+    height: 10vh;
+    width: 100%;
+    border-bottom: 1px darkblue solid;
+    background: linear-gradient(90deg, rgba(7,3,82,1) 0%, rgba(8,8,190,1) 45%, rgba(64,160,180,1) 100%);
+    color: white;
+}
+
+#consultaSaldo{
+    display: none;
+}
+
+#deposito{
+    display: none;
+}
+
+#retiroD{
+    display: none;
+}
+
