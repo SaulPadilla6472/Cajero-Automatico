@@ -6,6 +6,30 @@ header{
     color: white;
 }
 
+#consulta{
+    height: 20vh;
+    border: 1px white transparent;
+    background: rgb(103,103,103);
+background: linear-gradient(0deg, rgba(103,103,103,1) 0%, rgba(179,179,179,1) 30%, rgba(198,198,198,1) 56%, rgba(217,217,217,1) 82%);
+}
+
+#ingreso{
+    height: 20vh;
+    border: 1px white transparent;
+    background: rgb(103,103,103);
+background: linear-gradient(0deg, rgba(103,103,103,1) 0%, rgba(179,179,179,1) 30%, rgba(198,198,198,1) 56%, rgba(217,217,217,1) 82%);
+margin-right: 15vw;
+margin-left: 15vw;
+}
+
+#retiro{
+    height: 20vh;
+    border: 1px white transparent;
+    background: rgb(103,103,103);
+background: linear-gradient(0deg, rgba(103,103,103,1) 0%, rgba(179,179,179,1) 30%, rgba(198,198,198,1) 56%, rgba(217,217,217,1) 82%);
+}
+
+
 #consultaSaldo{
     display: none;
 }
@@ -18,3 +42,18 @@ header{
     display: none;
 }
 
+#alerta{
+    display: none;
+}
+
+#succes{
+    display: none;
+}
+
+#alerta2{
+    display: none;
+}
+
+#succes2{
+    display: none;
+}

@@ -4,17 +4,18 @@ window.onload = checkLogged;
     if(sessionStorage.getItem("logged") == 'true') {
         window.location.assign('home.html')
     } }
+let alerta1 = document.getElementById("alerta1")
 
 
 btlogin.addEventListener('click', (e) =>{
-var user = document.getElementById('user').value
-var password = document.getElementById('contra').value
+let user = document.getElementById('user').value
+let password = document.getElementById('contra').value
     login(user,password)
 }
 )
 
 function login(user, password){
-    for(var i=0; i<cuentas.length; i++){
+    for(let i=0; i<cuentas.length; i++){
         if(user == cuentas[i].nombre && password == cuentas[i].password){
             window.location.assign('home.html')
             sessionStorage.setItem('logged', 'true')
@@ -23,6 +24,6 @@ function login(user, password){
             return
         }
     }
-    alert('Usuario o password incorrectos')
+    alerta1.style.display = 'block'
 }
  

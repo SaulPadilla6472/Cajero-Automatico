@@ -26,3 +26,8 @@ header img{
     height: auto;
     margin-left: 25%;
 }
+
+#alerta1{
+    position: fixed;
+    display: none;
+}

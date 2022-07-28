@@ -20,10 +20,23 @@
     </div>
     </header>
     <h2>Operaciones disponibles</h2>
-    <div class="container-fluid ">
-        <button id="consulta">Consultar saldo</button>
-        <button id="ingreso">Ingresar monto</button>
-        <button id="retiro">Retirar monto</button>
+    <div class="container-fluid text-center">
+        <button id="consulta">Consultar saldo
+            <br><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"/>
+              </svg>
+        </button>
+        <button id="ingreso">Ingresar monto
+            <br><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+              </svg>
+        </button>
+        <button id="retiro">Retirar monto 
+            <br><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+                <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"/>
+              </svg></button>
     </div>
 
     
@@ -38,6 +51,12 @@
             <h3>Por favor, ingrese el monto que desea depositar</h3>
             <input type="number" name="monto" id="monto1">
             <button id="bt-deposito">Depositar</button>
+            <br>
+            <br>
+            <div class="alert alert-danger" role="alert" id="alerta">
+              </div>
+              <div class="alert alert-success" role="alert" id="succes">
+            </div>
         </div>
 
         <div id="retiroD">
@@ -45,6 +64,12 @@
             <h3>Por favor, ingrese el monto que desea retirar</h3>
             <input type="number" name="monto" id="monto2">
             <button id="bt-retiro">Retirar</button>
+            <br>
+            <br>
+            <div class="alert alert-danger" role="alert" id="alerta2">
+              </div>
+              <div class="alert alert-success" role="alert" id="succes2">
+              </div>
         </div>
 
     </div>
